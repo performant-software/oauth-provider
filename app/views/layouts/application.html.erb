@@ -9,8 +9,10 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="container end-user-view">
+      <p class="text-info"><%= notice %></p>
+      <p class="text-warning"><%= alert %></p>
+      <%= yield %>
+    </div>
   </body>
 </html>

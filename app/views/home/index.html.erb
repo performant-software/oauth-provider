@@ -1,9 +1,8 @@
-<ul class="session-links">
+<div class="list-group session-links">
   <% if user_signed_in? %>
-    <li><%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
+    <%= link_to "Log out", destroy_user_session_path, :method => :delete, :class => "list-group-item" %>
   <% else %>
-    <li><%= link_to "Log in", new_user_session_path %></li>
-    <li><%= link_to "Register", new_user_registration_path %></li>
+    <%= link_to "Log in", new_user_session_path, :class => "list-group-item" %>
+    <%= link_to "Register", new_user_registration_path, :class => "list-group-item" %>
   <% end %>
 </ul>
-<h3>Hi there!</h3>
