@@ -1,6 +1,13 @@
 {
   "name": "Simple OAuth2 provider",
   "description": "This app serves as a minimal service for applications that delegate their user login through OAuth.",
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "provider",
+    "devise",
+    "doorkeeper"
+  ],
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
   }
